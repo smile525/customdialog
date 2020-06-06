@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">CommonAlertPop</string>
+
+    <!--ProgressDialogHandler-->
+    <string name="loading_progress_dialog_handler" translatable="false">加载中...</string>
+
+    <string name="left">left</string>
+    <string name="right">right</string>
+
+    <string name="load_failure">加载失败</string>
+    <string name="load_reapplication">重新加载？</string>
+    <string name="cancel">取消</string>
+    <string name="sure">确认</string>
+
+    <!--Dialog-->
+    <style name="progress_dialog" parent="@android:style/Theme.Dialog">
+        <!-- 背景 -->
+        <item name="android:windowBackground">@color/white</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:background">@null</item>
+        <!-- 边框 -->
+        <item name="android:windowFrame">@null</item>
+        <!--  全屏-->
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowNoTitle">false</item>
+        <item name="android:windowCloseOnTouchOutside">true</item>
+        <!-- 浮于Activity之上 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- Dialog以外的区域模糊效果 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- Dialog进入及退出动画 -->
+<!--        <item name="android:windowAnimationStyle">@style/ActionSheetDialogAnimation</item>-->
+    </style>
+
+    <style name="animAlpha">
+        <item name="android:windowEnterAnimation">@anim/alpha_in</item>
+        <item name="android:windowExitAnimation">@anim/alpha_out</item>
+    </style>
+
+</resources>
